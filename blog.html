@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
-    <link rel="stylesheet" type="text/css" href="../personal-blog/assets/css/blog.css">
-    <link rel="stylesheet" type="text/css" href="../personal-blog/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/blog.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
 </head>
-<body>
-    <header>
+    <header class="blog-header">
         <h1>My first blog</h1>
+        <div>
+            <button class="btn-back" onclick="document.location='index.html'">
+                Back
+            </button>
+            <label class="switch">
+                Dark Mode
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </header> 
+    <body>
         <main>
-            <section>
+            <section id="blog-posts" class="blog-posts">
                 <h1>Testing</h1>
             </section>
             <section></section>
-            <section>
+            <section id="footer" class="footer">
                 <h1>Made with Love by Mjurek</h1>
                 <ul>
                     <li><strong>Blog:</strong> <a href="#">sampleName</a></li>
@@ -25,7 +35,7 @@
                 </ul>
             </section>
         </main>
-<script src="../personal-blog/assets/js/blog.js"></script>
-<script src="../personal-blog/assets/js/logic.js"></script>
+<script src="assets/js/blog.js"></script>
+<script src="assets/js/logic.js"></script>
 </body>
 </html>

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
-    <link rel="stylesheet" type="text/css" href="../personal-blog/assets/css/form.css">
-    <link rel="stylesheet" type="text/css" href="../personal-blog/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
 </head>
 <body>
     <header>
-        <h1>light mode vs dark mode</h1>
+        <label class="switch">
+            Dark Mode
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
     </header>
         <main>
             <section class="leftBox">
@@ -33,13 +37,13 @@
                     <label for="content">Content:</label>
                     <textarea id="content" name="content" rows="5" cols="15"></textarea>
                   </p>
-                  <input type="submit" value="Submit">  
+                  <input id="submit" type="submit" value="Submit">  
                 </form>
             </section>
             </div>
             <section></section>
         </main>
-<script src="../personal-blog/assets/js/form.js"></script>
-<script src="../personal-blog/assets/js/logic.js"></script>
+<script src="assets/js/form.js"></script>
+<script src="assets/js/logic.js"></script>
 </body>
 </html>
