@@ -1,4 +1,6 @@
 // Grab all the references to the DOM elements
+
+
 const blogPost = document.querySelector('#blog-posts');
 
 const posts = [];
@@ -16,7 +18,7 @@ function renderPosts() {
 }
 
 function init() {
-    const storedPosts = JSON.parse(localStorage.getItem('posts'));
+    const storedPosts = JSON.parse(localStorage.getItem('blogEntry'));
 
     if(storedPosts !== null) {
         posts = storedPosts;
@@ -25,5 +27,5 @@ function init() {
 }
 
 function storedPosts () {
-    localStorage.setItem('posts', JSON.stringify(posts));
+    localStorage.getItem('posts', JSON.stringify(posts));
 }
